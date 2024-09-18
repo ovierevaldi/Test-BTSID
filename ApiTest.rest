@@ -1,0 +1,52 @@
+
+# PUT http://localhost:8080/checklist/1/item/rename/1
+# Content-Type: application/json
+
+# {
+#     "newTaskName": "abc"
+# }
+
+
+# DELETE http://localhost:8080/checklist/2/item/3
+
+# PUT http://localhost:8080/checklist/1/item/1
+# Content-Type: application/json
+
+# {
+#     "completedStatus": true
+# }
+
+# GET http://localhost:8080/checklist/1/item/2
+
+# POST http://localhost:8080/checklist/1/item HTTP/1.1
+# content-type: application/json
+
+# {
+#    "task": "Go for a run", "completeStatus": false
+# }
+
+# GET http://localhost:8080/checklist/2
+
+# DELETE http://localhost:8080/checklist/2
+
+# GET http://localhost:8080/checklist HTTP/1.1
+# Authorization: Bearer {token}
+
+# POST http://localhost:8080/checklist HTTP/1.1
+# Authorization: Bearer {token}
+# content-type: application/json
+# {
+#    "tasks": [
+#         { "task": "Go for a run", "completeStatus": false },
+#         { "task": "Write a blog post", "completeStatus": false }
+#     ]
+# }
+
+# POST http://localhost:8080/register HTTP/1.1
+# content-type: application/json
+
+# {
+#     "username": "ovierevaldi",
+#     "email": "revaldiovie3@gmail.com",
+#     "password": "pass123"
+# }
